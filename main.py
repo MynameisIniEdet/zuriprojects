@@ -9,7 +9,7 @@
 
 def find_anagram(word, anagram):
   
-    if sorted(word)==sorted(anagram) or len(word)==len(anagram):
+    if sorted(word)==sorted(anagram):
         return True
     else:
         return False
