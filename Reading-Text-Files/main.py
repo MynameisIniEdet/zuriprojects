@@ -10,6 +10,17 @@ def read_file_content():
         data = file.read()
     # return "Hello World"
     return data
+
+
+def count_words():
+    text = read_file_content()
+    # assignment] Add your code here
+    counts = dict()
+    x = text.split()
     
-
-
+    for word in x:
+        if word in counts:
+            counts[word] +=1
+        else:
+            counts[word] =1
+    return counts
